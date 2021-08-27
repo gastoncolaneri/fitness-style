@@ -201,6 +201,7 @@ body {
   text-align: center;
   height: 100%;
 }
+
 .descriptionGyHome {
   padding: 20px;
   text-align: left;
@@ -208,6 +209,7 @@ body {
   flex-direction: column;
   height: 230px;
 }
+
 
 #imgGym {
   width: 100%;
@@ -248,6 +250,12 @@ body {
   font-size: 35px;
   margin-bottom: 15px;
   color: var(--orange);
+}
+
+
+.ejerHomeBlock:hover {
+  transform: scale(1.1,1.1);
+
 }
 
 /* -------------- Contacto -------------- */
