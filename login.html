@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/b0962e89dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="menu">
+        <a href="index.html">
+          <img src="./img/logoFitness.png" alt="logo" id="logo"
+        /></a>
+        <div><a href="index.html" class="links">Home</a></div>
+        <div><a href="gimnasios.html" class="links">Gimnasios </a></div>
+        <div><a href="ejercicios.html" class="links">Ejercicios </a></div>
+        <div><a href="nutricion.html" class="links">Nutrición </a></div>
+        <div><a href="contacto.html" class="links">Contacto </a></div>
+      </div>
+      <div id="loginNav">
+        <a href="login.html" class="links"
+          ><div class="buttonSmall br10">
+            Ingresar <i class="fas fa-sign-in-alt"></i></div
+        ></a>
+      </div>
+    </nav>
+    <div class="mainContainer">
+      <div id="loginBlock">
+        <img src="./img/login4.jpg" alt="logo" id="imgLogin" />
+        <form class="mainContainer" action="">
+          <div>
+            <p class="titleContacto">Bienvenido</p>
+            <div class="blockDatos">
+              <div class="mb10 dFlex">
+                <i class="fas fa-user-circle iconLogin"></i
+                ><input
+                  placeholder="Usuario o correo electrónico"
+                  type="text"
+                  class="datos"
+                  required
+                />
+              </div>
+            </div>
+            <div class="blockDatos">
+              <div class="dFlex">
+                <i class="fas fa-unlock-alt iconLogin"></i
+                ><input
+                  placeholder="Contraseña"
+                  type="password"
+                  class="datos"
+                  required
+                />
+              </div>
+            </div>
+            <div class="blockdatos mb15">
+              <div class="forgotPassBlock">
+                <p class="forgotPassText">
+                  <a href="./resetPassword.html" class="links"
+                    >Olvidé mi contraseña
+                  </a>
+                </p>
+                <p class="taRight">
+                  ¿No estás registrado?
+                  <br /><a href="./signIn.html" class="links newAccountText"
+                    >Crear una cuenta
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="mb15 taCenter">
+              <button id="botonLogin" type="submit" class="mb10">
+                Ingresar
+              </button>
+              <button class="othersLoginButton fb" type="button">
+                <div class="loginSocialBlock">
+                  <i class="fab fa-facebook-square iconLoginSocial"></i>
+                  <span class="textOtherLogin">Ingresar con Facebook</span>
+                </div>
+              </button>
+              <button class="othersLoginButton tw" type="button">
+                <div class="loginSocialBlock">
+                  <i class="fab fa-twitter iconLoginSocial"></i>
+                  <span class="textOtherLogin">Ingresar con Twitter</span>
+                </div>
+              </button>
+              <button class="othersLoginButton gm" type="button">
+                <div class="loginSocialBlock">
+                  <i class="fab fa-google-plus-square iconLoginSocial"></i>
+                  <span class="textOtherLogin">Ingresar con Gmail</span>
+                </div>
+              </button>
+            </div>
+            <div class="mb15"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="mb10">
+        <h3 class="titleFooter">Sobre nosotros</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem in
+          nobis laudantium velit, nam expedita iure inventore distinctio.
+          Adipisci consectetur rem ab ipsa ipsum nam debitis et voluptas ad
+          eveniet?
+        </p>
+      </div>
+      <div class="mb10">
+        <h3 class="titleFooter">Links</h3>
+        <div class="linksFooter">
+          <a href="index.html" class="links">Home</a>
+        </div>
+        <div class="linksFooter">
+          <a href="quienesSomos.html" class="links">¿Quiénes somos? </a>
+        </div>
+        <div class="linksFooter">
+          <a href="gimnasios.html" class="links">Gimnasios </a>
+        </div>
+        <div class="linksFooter">
+          <a href="ejercicios.html" class="links">Ejercicios </a>
+        </div>
+        <div class="linksFooter">
+          <a href="nutricion.html" class="links">Nutrición </a>
+        </div>
+      </div>
+      <div class="mb10">
+        <div class="iconSocialContainer">
+          <h3 class="titleFooter">Redes sociales</h3>
+          <div>
+            <a href="#" class="links"
+              ><i class="fab fa-instagram iconSocial"></i>
+            </a>
+            <a href="#" class="links"
+              ><i class="fab fa-facebook iconSocial"></i>
+            </a>
+            <a href="#" class="links"
+              ><i class="fab fa-whatsapp iconSocial"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="titleFooter">Suscribite</h3>
+          <div id="inputContainer">
+            <input
+              placeholder="Ingresá tu correo"
+              id="newsletter"
+              type="email"
+            />
+            <i class="fas fa-chevron-circle-right iconSend"> </i>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

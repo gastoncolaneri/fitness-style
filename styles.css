@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* -------------- Variables -------------- */
+
+:root {
+  --orange: #fa7505;
+  --white: #ffffff;
+  --grey: #d8d7d7;
+  --darkGrey: #292929;
+}
+
+/* -------------- General -------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('./img/background.jpg');
+  background-attachment: fixed;
+  color: var(--grey);
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+.taCenter {
+  text-align: center;
+}
+
+.taRight {
+  text-align: right;
+}
+
+.taLeft {
+  text-align: left;
+}
+.br10 {
+  border-radius: 10px;
+}
+
+.dFlex {
+  display: flex;
+}
+#logo {
+  width: 80px;
+  height: 80px;
+}
+
+#navbar {
+  display: grid;
+  grid-template-columns: 480px 1fr;
+  background-color: var(--darkGrey);
+  color: var(--grey);
+  width: 100%;
+  padding: 0 10%;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  z-index: 999;
+}
+
+#menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+  align-items: center;
+  text-align: center;
+}
+
+#logoNav {
+  text-align: center;
+}
+
+#loginNav {
+  display: grid;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.buttonSmall {
+  border: 1.5px solid var(--grey);
+  padding: 10px;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+  min-width: 110px;
+  background-color: var(--darkGrey);
+  color: var(--grey);
+}
+.buttonSmall:hover {
+  background-color: var(--orange);
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  background-color: var(--darkGrey);
+  text-align: center;
+  padding: 20px 10%;
+}
+
+#inputContainer {
+  display: flex;
+  justify-content: center;
+}
+#newsletter {
+  margin-right: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  color: var(--white);
+  border: 1.5px solid var(--grey);
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#newsletter:focus {
+  border: 2.5px solid var(--white);
+}
+
+#newsletter:focus::placeholder {
+  color: var(--white);
+}
+.mainContainer {
+  padding: 2% 10%;
+  height: 100%;
+}
+.links {
+  text-decoration: none;
+  color: var(--grey);
+  transition: color 0.5s ease;
+}
+
+.links:hover {
+  color: var(--orange);
+}
+
+.links:visited {
+  text-decoration: none;
+}
+
+.linksFooter {
+  margin: 12px;
+}
+.titleFooter {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: var(--orange);
+}
+.iconSocialContainer {
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+  margin-bottom: 10px;
+}
+.iconSocial {
+  font-size: 40px;
+  margin: 0px 12px;
+}
+
+.iconSend {
+  font-size: 30px;
+  align-self: center;
+}
+
+.iconSend:hover {
+  color: var(--orange);
+}
+
+/* -------------- Home -------------- */
+
+#bannerBlock {
+  background-image: url('./img/banner.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 20px;
+}
+
+.cardBlock {
+  background-color: #d8d7d71c;
+  border-radius: 10px;
+  backdrop-filter: blur(3px) brightness(40%);
+  text-align: center;
+  height: 100%;
+}
+.descriptionGyHome {
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+}
+
+#imgGym {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+#nutriHomeBanner {
+  border-radius: 10px;
+  background-image: url('./img/bannerNutri.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blockNutriHome {
+  background-color: #d8d7d71c;
+  backdrop-filter: blur(3px) brightness(40%);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+}
+
+.filterBanner {
+  background-color: #d8d7d71c;
+  backdrop-filter: blur(3px) brightness(40%);
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+}
+.gymNameHome {
+  margin-bottom: 15px;
+  text-align: center;
+  color: var(--orange);
+  font-size: 18px;
+  font-weight: 600;
+}
+.subtitleHome {
+  font-size: 35px;
+  margin-bottom: 15px;
+  color: var(--orange);
+}
+
+/* -------------- Contacto -------------- */
+
+.titleContacto {
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blockDatos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  margin-bottom: 20px;
+  column-gap: 30px;
+}
+
+.datos {
+  width: 100%;
+  height: 40px;
+  padding: 15px;
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  color: var(--white);
+  border-bottom: 1.5px solid var(--grey);
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+.datos:focus {
+  border-bottom: 2.5px solid var(--white);
+}
+
+.datos:focus::placeholder {
+  color: var(--white);
+}
+
+::placeholder {
+  color: var(--grey);
+  font-size: 14px;
+  opacity: 1;
+  font-family: 'Roboto', sans-serif;
+}
+
+.consulta {
+  margin-top: 25px;
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  background-color: transparent;
+  color: var(--white);
+  border: 1.5px solid var(--grey);
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.consulta:focus {
+  border: 2.5px solid var(--white);
+}
+
+.consulta:focus::placeholder {
+  color: var(--white);
+}
+
+#contactoContainer {
+  display: grid;
+  width: 70%;
+  padding: 50px 5%;
+  background-color: #d8d7d71c;
+  border-radius: 10px;
+  margin: auto;
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--grey);
+}
+/* -------------- Login -------------- */
+
+#imgLogin {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  justify-self: center;
+  align-self: center;
+  filter: grayscale(100%);
+}
+
+#loginBlock {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  border-radius: 10px;
+  background-color: var(--darkGrey);
+  width: 100%;
+  border: 2px solid var(--grey);
+}
+
+#botonLogin {
+  border-radius: 10px;
+  padding: 10px;
+  width: 70%;
+  font-size: 16px;
+  transition: background-color 0.5s ease;
+  border: 0;
+  background-color: var(--orange);
+  color: var(--grey);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#botonLogin:hover {
+  background-color: #fa7505af;
+}
+
+.iconLogin {
+  font-size: 25px;
+  align-self: center;
+  margin-right: 15px;
+  color: var(--orange);
+}
+
+.loginSocialBlock {
+  text-align: center;
+}
+.iconLoginSocial {
+  color: var(--grey);
+  font-size: 18px;
+}
+
+.fb {
+  background-color: #3e5b95;
+}
+
+.tw {
+  background-color: #5aabec;
+}
+
+.gm {
+  background-color: #de4c3b;
+}
+
+.fb:hover {
+  background-color: #3e5b95af;
+}
+
+.tw:hover {
+  background-color: #5aabecaf;
+}
+
+.gm:hover {
+  background-color: #de4c3baf;
+}
+.othersLoginButton {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: 0;
+  transition: background-color 0.5s ease;
+  color: var(--orange);
+  cursor: pointer;
+  width: 70%;
+  text-align: left;
+}
+
+.textOtherLogin {
+  color: var(--grey);
+  vertical-align: middle;
+}
+
+.forgotPassBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forgotPassText {
+  font-weight: 600;
+  margin-left: 40px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.newAccountText {
+  font-weight: 600;
+  text-decoration-line: underline;
+  font-size: 14px;
+}
+/* -------------- Sign in -------------- */
+#imgSignIn {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  justify-self: center;
+  align-self: center;
+  filter: grayscale(100%);
+}
+
+/* -------------- Gimnasio -------------- */
+
+#firstBlock {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #d8d7d71c;
+}
+
+#description {
+  padding: 10px;
+  text-align: left;
+  align-self: center;
+}
+
+#imgHome {
+  width: 100%;
+  border-radius: 10px;
+  justify-self: center;
+  align-self: center;
+}
+
+/* -------------- Media Queries -------------- */
+
+@media (max-width: 576px) {
+  .titleContacto {
+    font-size: 40px;
+  }
+  .blockDatos {
+    grid-template-columns: 1fr;
+    margin-bottom: 0px;
+  }
+  .datos {
+    margin-bottom: 15px;
+  }
+  .consulta {
+    margin-bottom: 15px;
+  }
+  #contactoContainer {
+    width: 100%;
+    padding: 30px 5%;
+  }
+  #imgLogin {
+    display: none;
+  }
+  #footer {
+    grid-template-columns: 1fr;
+  }
+  #firstBlock {
+    grid-template-columns: 1fr;
+  }
+  #navbar {
+    grid-template-columns: 100px 1fr;
+  }
+  .card {
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    column-gap: 2px;
+  }
+  .infoGymHome {
+    display: none;
+  }
+
+  .descriptionGyHome {
+    height: auto;
+    padding: 5px;
+  }
+  .gymNameHome {
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
+  .buttonSmall {
+    min-width: 50px;
+    padding: 5px;
+    font-size: 10px;
+  }
+  .subtitleHome {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .titleContacto {
+    font-size: 40px;
+  }
+  .blockDatos {
+    grid-template-columns: 1fr;
+    margin-bottom: 0px;
+  }
+  .datos {
+    margin-bottom: 15px;
+  }
+  .consulta {
+    margin-bottom: 15px;
+  }
+  #contactoContainer {
+    width: 80%;
+    padding: 30px 5%;
+  }
+  #footer {
+    grid-template-columns: 1fr;
+  }
+  #firstBlock {
+    grid-template-columns: 1fr;
+  }
+  #imgLogin {
+    display: none;
+  }
+  #navbar {
+    grid-template-columns: 400px 1fr;
+  }
+  .card {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    column-gap: 5px;
+  }
+  .infoGymHome {
+    display: none;
+  }
+
+  .descriptionGyHome {
+    height: auto;
+  }
+  .gymNameHome {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .blockDatos {
+    grid-template-columns: 1fr;
+    margin-bottom: 0px;
+  }
+  .datos {
+    margin-bottom: 15px;
+  }
+  .consulta {
+    margin-bottom: 15px;
+  }
+  #contactoContainer {
+    width: 90%;
+  }
+  #imgLogin {
+    display: none;
+  }
+  #imgSignIn {
+    display: none;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    column-gap: 10px;
+  }
+  .descriptionGyHome {
+    padding: 10px;
+    height: 270px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .datos {
+    font-size: 14px;
+  }
+  #contactoContainer {
+    width: 80%;
+  }
+  #imgSignIn {
+    display: none;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    column-gap: 15px;
+  }
+  .descriptionGyHome {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .datos {
+    font-size: 14px;
+  }
+  #contactoContainer {
+    width: 80%;
+  }
+  #imgSignIn {
+    display: none;
+  }
+}
