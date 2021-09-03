@@ -17,11 +17,21 @@
         <a href="index.html">
           <img src="./img/logoFitness.png" alt="logo" id="logo"
         /></a>
-        <div><a href="index.html" class="links">Home</a></div>
-        <div><a href="gimnasios.html" class="links">Gimnasios </a></div>
-        <div><a href="ejercicios.html" class="links">Ejercicios </a></div>
-        <div><a href="nutricion.html" class="links">Nutrición </a></div>
-        <div><a href="contacto.html" class="links">Contacto </a></div>
+        <div><a href="index.html#navbar" class="links">Home</a></div>
+        <div><a href="index.html#ejercicios" class="links">Ejercicios </a></div>
+        <div><a href="index.html#nutricion" class="links">Nutrición </a></div>
+        <div><a href="index.html#gimnasios" class="links">Gimnasios </a></div>
+        <div><a href="index.html#contacto" class="links">Contacto </a></div>
+      </div>
+      <div id="burgerMenuIcon">
+        <a href="#" class="links"
+          ><i class="fas fa-bars" id="burgerIcon"></i
+        ></a>
+      </div>
+      <div id="logoBurger" style="justify-self: flex-end">
+        <a href="index.html">
+          <img src="./img/logoFitness.png" alt="logo" id="logo"
+        /></a>
       </div>
       <div id="loginNav">
         <a href="login.html" class="links"
@@ -30,9 +40,49 @@
         ></a>
       </div>
     </nav>
+    <a href="#navbar"><i class="fas fa-arrow-circle-up" id="upIcon"></i></a>
 
-    <div class="mainContainer">
-      <div id="loginBlock">
+    <div id="burgerMenu" class="burgerMenu dNone">
+      <div class="blockBurgerMenu">
+        <div class="linksBurgerMenu">
+          <a href="index.html#navbar" class="links">
+            <i class="fas fa-home boxIcon"></i>
+            Home</a
+          >
+        </div>
+        <div class="linksBurgerMenu">
+          <a href="index.html#ejercicios" class="links"
+            ><i class="fas fa-running boxIcon"></i>
+            Ejercicios
+          </a>
+        </div>
+        <div class="linksBurgerMenu">
+          <a href="index.html#nutricion" class="links"
+            ><i class="fas fa-utensils boxIcon"></i>
+            Nutrición
+          </a>
+        </div>
+        <div class="linksBurgerMenu">
+          <a href="index.html#gimnasios" class="links"
+            ><i class="fas fa-dumbbell boxIcon"></i>
+            Gimnasios
+          </a>
+        </div>
+        <div class="linksBurgerMenu">
+          <a href="index.html#contacto" class="links"
+            ><i class="fas fa-envelope boxIcon"></i>
+            Contacto
+          </a>
+        </div>
+        <a href="login.html" class="links"
+          ><div class="buttonSmall br10">
+            Ingresar <i class="fas fa-sign-in-alt"></i></div
+        ></a>
+      </div>
+    </div>
+
+    <div class="mainContainerLogin">
+      <div id="loginBlock" class="w100">
         <form class="mainContainer" action="">
           <div>
             <p class="titleContacto">Registrate</p>
@@ -62,17 +112,7 @@
                 />
               </div>
             </div>
-            <div class="blockDatos">
-              <div class="dFlex">
-                <input placeholder="Cod.Area" class="datos" />
-              </div>
-              <div class="dFlex">
-                <input placeholder="Teléfono" class="datos" />
-              </div>
-              <div class="dFlex">
-                <input placeholder="Celular" class="datos" required />
-              </div>
-            </div>
+
             <div class="blockDatos">
               <div class="dFlex">
                 <input
@@ -111,71 +151,43 @@
             </div>
 
             <div>
-              <button id="botonLogin" type="submit" class="mb15 mt20">
-                Registrarse
-              </button>
+              <div class="mb15 taCenter">
+                <button id="botonLogin" type="submit" class="mb15 mt20">
+                  Registrarse
+                </button>
+              </div>
             </div>
           </div>
         </form>
-        <img src="./img/login2.jpg" alt="logo" id="imgSignIn" />
+        <img
+          src="./img/registrarse.jpg"
+          alt="logo"
+          id="imgLogin"
+          class="filterg100"
+        />
       </div>
     </div>
 
     <footer id="footer">
-      <div class="mb10">
-        <h3 class="titleFooter">Sobre nosotros</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem in
-          nobis laudantium velit, nam expedita iure inventore distinctio.
-          Adipisci consectetur rem ab ipsa ipsum nam debitis et voluptas ad
-          eveniet?
-        </p>
-      </div>
-      <div class="mb10">
-        <h3 class="titleFooter">Links</h3>
-        <div class="linksFooter">
-          <a href="index.html" class="links">Home</a>
-        </div>
-        <div class="linksFooter">
-          <a href="quienesSomos.html" class="links">¿Quiénes somos? </a>
-        </div>
-        <div class="linksFooter">
-          <a href="gimnasios.html" class="links">Gimnasios </a>
-        </div>
-        <div class="linksFooter">
-          <a href="ejercicios.html" class="links">Ejercicios </a>
-        </div>
-        <div class="linksFooter">
-          <a href="nutricion.html" class="links">Nutrición </a>
-        </div>
-      </div>
-      <div class="mb10">
-        <div class="iconSocialContainer">
-          <h3 class="titleFooter">Redes sociales</h3>
-          <div>
-            <a href="#" class="links"
-              ><i class="fab fa-instagram iconSocial"></i>
-            </a>
-            <a href="#" class="links"
-              ><i class="fab fa-facebook iconSocial"></i>
-            </a>
-            <a href="#" class="links"
-              ><i class="fab fa-whatsapp iconSocial"></i>
-            </a>
-          </div>
+      <div class="iconSocialContainer">
+        <a href="#" class="links"
+          ><i class="fab fa-instagram iconSocial"></i>
+        </a>
+        <a href="#" class="links"
+          ><i class="fab fa-facebook iconSocial"></i>
+        </a>
+        <a href="#" class="links"
+          ><i class="fab fa-whatsapp iconSocial"></i>
+        </a>
+        <a href="#" class="links"><i class="fab fa-twitter iconSocial"></i> </a>
+        <div class="mt20 mb10">
+          <p>Atención telefónica | 0810-0220-6646</p>
         </div>
         <div>
-          <h3 class="titleFooter">Suscribite</h3>
-          <div id="inputContainer">
-            <input
-              placeholder="Ingresá tu correo"
-              id="newsletter"
-              type="email"
-            />
-            <i class="fas fa-chevron-circle-right iconSend"> </i>
-          </div>
+          <p><small>Gastón Colaneri | &copy 2021</small></p>
         </div>
       </div>
     </footer>
   </body>
+  <script src="./index.js"></script>
 </html>

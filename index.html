@@ -17,11 +17,21 @@
         <a href="index.html">
           <img src="./img/logoFitness.png" alt="logo" id="logo"
         /></a>
-        <div><a href="index.html" class="links">Home</a></div>
-        <div><a href="gimnasios.html" class="links">Gimnasios </a></div>
-        <div><a href="ejercicios.html" class="links">Ejercicios </a></div>
-        <div><a href="nutricion.html" class="links">Nutrición </a></div>
-        <div><a href="contacto.html" class="links">Contacto </a></div>
+        <div><a href="#navbar" class="links">Home</a></div>
+        <div><a href="#ejercicios" class="links">Ejercicios </a></div>
+        <div><a href="#nutricion" class="links">Nutrición </a></div>
+        <div><a href="#gimnasios" class="links">Gimnasios </a></div>
+        <div><a href="#contacto" class="links">Contacto </a></div>
+      </div>
+      <div id="burgerMenuIcon">
+        <a href="#" class="links"
+          ><i class="fas fa-bars" id="burgerIcon"></i
+        ></a>
+      </div>
+      <div id="logoBurger">
+        <a href="index.html">
+          <img src="./img/logoFitness.png" alt="logo" id="logo"
+        /></a>
       </div>
       <div id="loginNav">
         <a href="login.html" class="links"
@@ -30,201 +40,516 @@
         ></a>
       </div>
     </nav>
-    <div id="bannerBlock">
-      <div class="filterBanner">
-        <div >
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-            quam, repellendus cum iste soluta quae veritatis accusamus
-            perferendis itaque excepturi earum tempora saepe commodi possimus
-            repellat, eum aut minus voluptatibus!
-          </p>
-          <div class="taCenter">
-            <a href="./nutricion.html"
-              ><button class="buttonSmall br10 mt20">Saber más</button></a
+    <a href="#navbar"><i class="fas fa-arrow-circle-up" id="upIcon"></i></a>
+
+    <div>
+      <div id="burgerMenu" class="burgerMenu dNone">
+        <div class="blockBurgerMenu">
+          <div class="linksBurgerMenu">
+            <a href="#navbar" class="links">
+              <i class="fas fa-home boxIcon"></i>
+              Home</a
             >
+          </div>
+          <div class="linksBurgerMenu">
+            <a href="#ejercicios" class="links"
+              ><i class="fas fa-running boxIcon"></i>
+              Ejercicios
+            </a>
+          </div>
+          <div class="linksBurgerMenu">
+            <a href="#nutricion" class="links"
+              ><i class="fas fa-utensils boxIcon"></i>
+              Nutrición
+            </a>
+          </div>
+          <div class="linksBurgerMenu">
+            <a href="#gimnasios" class="links"
+              ><i class="fas fa-dumbbell boxIcon"></i>
+              Gimnasios
+            </a>
+          </div>
+          <div class="linksBurgerMenu">
+            <a href="#contacto" class="links"
+              ><i class="fas fa-envelope boxIcon"></i>
+              Contacto
+            </a>
+          </div>
+          <a href="login.html" class="links"
+            ><div class="buttonSmall br10">
+              Ingresar <i class="fas fa-sign-in-alt"></i></div
+          ></a>
+        </div>
+      </div>
+
+      <div id="bannerBlock">
+        <div class="filterBanner">
+          <div class="br10 filterBlack">
+            <div>
+              <img src="./img/logo.png" class="logoHome" />
+            </div>
+
+            <h2 class="mb20">¡Que bueno que nos visites!</h2>
+            <p class="mb15 textHome">
+              Si es la primera vez que ingresas, debés
+              <a href="signIn.html" class="linkHome">crear una cuenta</a>. Una
+              vez que la generes, vas a poder acceder a:
+            </p>
+            <div class="boxIconHome">
+              <div class="mb15">
+                <i class="fas fa-dumbbell iconHome"></i>
+                <p class="naranja">Rutinas de ejercicios</p>
+              </div>
+              <div class="mb15">
+                <i class="fas fa-utensils iconHome"></i>
+                <p class="naranja">Asesoría en nutrición</p>
+              </div>
+              <div class="mb15">
+                <i class="fas fa-percent iconHome"></i>
+                <p class="naranja">Descuentos en gimnasios</p>
+              </div>
+              <div class="mb15">
+                <i class="fas fa-info-circle iconHome"></i>
+                <p class="naranja">Información general</p>
+              </div>
+            </div>
+            <p class="mb10 textHome">
+              Vas a poder armar un plan diario, tanto de ejercicios como
+              alimentario. También contás con información sobre ejercicios,
+              nutrición y gimnasios asociados, para los cuales obtenés un
+              descuento al registrarte en nuestra página web.
+            </p>
+            <p class="textHome">
+              En caso que tengas alguna duda, no dudes en contactarte con
+              nosotros!
+            </p>
           </div>
         </div>
       </div>
+
+      <section class="mainContainer" id="ejercicios">
+        <p class="subtitleHome">Ejercicios</p>
+        <div class="card">
+          <div class="cardBlock">
+            <a href="#modalEjercicio1">
+              <img src="./img/aerobico.jpg" alt="logo" class="imgEjercicio" />
+              <div class="tipoEjercicioBox">
+                <p class="tituloEjercicio">AERÓBICOS</p>
+              </div>
+              <div class="boxSaberMas">
+                <p class="textSaberMas">Saber más</p>
+              </div>
+            </a>
+          </div>
+          <div class="cardBlock">
+            <a href="#modalEjercicio2"
+              ><img src="./img/fuerza.jpg" alt="logo" class="imgEjercicio" />
+              <div class="tipoEjercicioBox">
+                <p class="tituloEjercicio">FUERZA/RESISTENCIA</p>
+              </div>
+              <div class="boxSaberMas">
+                <p class="textSaberMas">Saber más</p>
+              </div>
+            </a>
+          </div>
+          <div class="cardBlock">
+            <a href="#modalEjercicio3"
+              ><img
+                src="./img/flexibilidad.jpg"
+                alt="logo"
+                class="imgEjercicio"
+              />
+              <div class="tipoEjercicioBox">
+                <p class="tituloEjercicio">FLEXIBILIDAD</p>
+              </div>
+              <div class="boxSaberMas">
+                <p class="textSaberMas">Saber más</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div id="modalEjercicio1" class="modalEjercicio">
+        <div class="modalText">
+          <h3 class="mb15">Ejercicios Aeróbicos</h3>
+          <h5 class="mb10">¿Qué es?</h5>
+          <p class="mb10 taJustify">
+            Cualquier actividad que utilice oxígeno, eleve tu frecuencia
+            cardiaca y te deje levemente sin aliento. No sólo mantiene tu
+            corazón, pulmones y vasos sanguíneos saludables, sino que también
+            mejora el nivel de tu estado físico. Combinando diferentes tipos de
+            ejercicios aeróbicos con una dieta equilibrada estarás en el camino
+            correcto para mantener un peso y un buen estado de salud.
+          </p>
+          <h5 class="mb10">Beneficios</h5>
+          <p class="mb10 taJustify">
+            <i class="fas fa-running bullet"></i>
+            Mejoran la capacidad pulmonar, la circulación, así como la
+            utilización y el rendimiento del oxígeno. <br />
+
+            <i class="fas fa-running bullet"></i>
+            Mejoran a medio plazo los niveles de presión sanguínea en personas
+            hipertensas.<br />
+
+            <i class="fas fa-running bullet"></i>
+            Disminuyen los niveles de colesterol total.<br />
+
+            <i class="fas fa-running bullet"></i>
+            Disminuyen los niveles de glucosa en sangre. <br />
+
+            <i class="fas fa-running bullet"></i>
+            Mejoran la capacidad mental y de aprendizaje. Reafirman y tonifican
+            músculos y tejidos.<br />
+
+            <i class="fas fa-running bullet"></i>
+            Mejoran el estado de ánimo.
+          </p>
+          <h5 class="mb10">Ejemplos</h5>
+          <div class="boxEjerciciosModal">
+            <div>
+              <p class="taCenter">Caminar</p>
+              <img src="./img/caminar.jpg" alt="logo" class="imgEjercicio" />
+            </div>
+            <div>
+              <p class="taCenter">Bicicleta</p>
+              <img src="./img/bici.jpg" alt="logo" class="imgEjercicio" />
+            </div>
+            <div>
+              <p class="taCenter">Natación</p>
+              <img src="./img/natacion.jpg" alt="logo" class="imgEjercicio" />
+            </div>
+            <div>
+              <p class="taCenter">Correr</p>
+              <img src="./img/correr.jpg" alt="logo" class="imgEjercicio" />
+            </div>
+            <div>
+              <p class="taCenter">Fútbol</p>
+              <img src="./img/futbol.jpg" alt="logo" class="imgEjercicio" />
+            </div>
+            <div>
+              <p class="taCenter">Tenis</p>
+              <img src="./img/tenis.jpg" alt="logo" class="imgEjercicio" />
+            </div>
+          </div>
+
+          <a href="#ejercicios">
+            <i class="fas fa-times-circle closeButton"></i>
+          </a>
+        </div>
+      </div>
+
+      <div id="modalEjercicio2" class="modalEjercicio">
+        <div class="modalText">
+          <h3 class="mb15">Ejercicios de Fuerza/Resistencia</h3>
+          <h5 class="mb10">¿Qué es?</h5>
+          <p style="font-size: medium" class="mb10">
+            Son ejercicios breves y de alta intensidad que trabajan los músculos
+            de forma particular y no necesitan el uso del oxígeno de la
+            respiración. Este tipo de ejercicios desarrollan la fuerza muscular
+            mediante un sistema de resistencia. Se realizan comúnmente a través
+            de pesas o máquinas que ejercen una resistencia a la contracción del
+            músculo.
+          </p>
+          <h5 class="mb10">Beneficios</h5>
+          <p style="font-size: medium" class="mb10">
+            <i class="fas fa-running bullet"></i>
+            Aumentan la fuerza, la resistencia y la dureza de músculos,
+            articulaciones, tendones y ligamentos, lo que disminuye el riesgo de
+            osteoporosis.
+            <br />
+
+            <i class="fas fa-running bullet"></i>
+            Mejoran la función cardíaca y elevan el colesterol bueno (HDL).
+            <br />
+
+            <i class="fas fa-running bullet"></i>
+            Acompañados de una dieta adecuada, nos hacen perder peso y aumentar
+            la masa muscular.
+            <br />
+          </p>
+          <h5 class="mb10">Ejemplos</h5>
+          <div class="boxEjerciciosModal">
+            <div>
+              <p class="taCenter">Flexiones</p>
+              <img src="./img/flexiones.jpg" alt="logo" class="imgEjercicio" />
+            </div>
+            <div>
+              <p class="taCenter">Abdominales</p>
+              <img src="./img/abs.jpg" alt="logo" class="imgEjercicio" />
+            </div>
+            <div>
+              <p class="taCenter">Sentadillas</p>
+              <img src="./img/sentadilla.jpg" alt="logo" class="imgEjercicio" />
+            </div>
+            <div>
+              <p class="taCenter">Sprints</p>
+              <img src="./img/sprints.jpg" alt="logo" class="imgEjercicio" />
+            </div>
+            <div>
+              <p class="taCenter">Pesas</p>
+              <img src="./img/pesas.jpg" alt="logo" class="imgEjercicio" />
+            </div>
+            <div>
+              <p class="taCenter">Saltos de box</p>
+              <img src="./img/boxJump.JPG" alt="logo" class="imgEjercicio" />
+            </div>
+          </div>
+
+          <a href="#ejercicios">
+            <i class="fas fa-times-circle closeButton"></i>
+          </a>
+        </div>
+      </div>
+
+      <div id="modalEjercicio3" class="modalEjercicio">
+        <a href="#ejercicios">
+          <i class="fas fa-times-circle closeButton"></i>
+        </a>
+        <div class="modalText">
+          <h3 class="mb15">Ejercicios de flexibilidad</h3>
+          <h5 class="mb10">¿Qué es?</h5>
+          <p style="font-size: medium" class="mb10">
+            Son los basados en movimientos de estiramiento y relajación de
+            músculos y articulaciones, lo que aumenta su capacidad de movimiento
+            y adaptación.
+          </p>
+          <h5 class="mb10">Beneficios</h5>
+          <p style="font-size: medium" class="mb10">
+            <i class="fas fa-running bullet"></i>
+            Aumentan la capacidad de movimiento de músculos y articulaciones,
+            evitando la rigidez y las lesiones
+            <br />
+
+            <i class="fas fa-running bullet"></i>
+            Aumentan la flexibilidad en general.
+            <br />
+
+            <i class="fas fa-running bullet"></i>
+            Mejoran la circulación, el equilibrio y la postura.
+            <br />
+
+            <i class="fas fa-running bullet"></i>
+            Acompañados de ejercicios de respiración, ayudan a liberar estrés y
+            a relajarnos.
+            <br />
+          </p>
+          <h5 class="mb10">Ejemplos</h5>
+          <div class="boxEjerciciosModal">
+            <div>
+              <p class="taCenter">Yoga</p>
+              <img src="./img/yoga.jpg" alt="logo" class="imgEjercicio" />
+            </div>
+            <div>
+              <p class="taCenter">Pilates</p>
+              <img src="./img/pilates.jpg" alt="logo" class="imgEjercicio" />
+            </div>
+            <div>
+              <p class="taCenter">Tai Chi</p>
+              <img src="./img/taichi.jpg" alt="logo" class="imgEjercicio" />
+            </div>
+            <div>
+              <p class="taCenter">Natación</p>
+              <img src="./img/natacion2.jpg" alt="logo" class="imgEjercicio" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="mainContainer" id="nutricion">
+        <p class="subtitleHome">Nutrición</p>
+        <div id="desayuno" class="blockImgNutri mb15">
+          <div class="blockNutri textRight br10">
+            <h3 class="mb10">Desayuno</h3>
+            <p>
+              Entre el desayuno y la media mañana se debe consumir un lácteo
+              (leche, yogur o queso) algún alimento feculento (pan, tostadas o
+              cereales), acompañado -o no- por algún alimento proteico, y una
+              fruta.
+            </p>
+          </div>
+        </div>
+        <div id="almuerzo" class="blockImgNutri mb15">
+          <div class="blockNutri textLeft br10">
+            <h3 class="mb10">Almuerzo</h3>
+            <p>
+              El almuerzo dependerá de si estás en una fase de pérdida de peso o
+              aumento de musculación y de tu forma física actual, pero en
+              cualquier caso hay determinados alimentos que no pueden faltar en
+              tu dieta: Carnes magras como el pollo o el pavo, ternera,
+              pescados, cereales integrales, vegetales y hortalizas, fruta y
+              fibra. Cocina todo ello con las mínimas grasas posibles.
+            </p>
+          </div>
+        </div>
+        <div id="cena" class="blockImgNutri mb15">
+          <div class="blockNutri textRight br10">
+            <h3 class="mb10">Cena</h3>
+            <p>
+              Una cena equilibrada y ligera debería contener verduras crudas o
+              cocinadas, alimentos proteicos magros (carne, pescado o huevos) y
+              una cantidad moderada de alimentos feculentos (pan, pasta,
+              cereales y legumbres). Es conveniente consultar al
+              dietista-nutricionista sobre la composición cuantitativa, si está
+              realizando una dieta controlada en calorías.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mainContainer" id="gimnasios">
+        <p class="subtitleHome">Gimnasios asociados</p>
+        <div class="card">
+          <div class="cardBlock">
+            <div>
+              <img src="./img/gym1.jpg" alt="logo" class="imgGym" />
+            </div>
+            <div class="descriptionGyHome">
+              <p class="gymNameHome">SportClub</p>
+              <p class="infoGymHome">
+                SportClub es la marca líder en servicios deportivos más grande
+                de la Argentina desde hace más de 25 años. Cuenta con +90
+                centros deportivos adheridos con máquinas de última generación e
+                instalaciones modernas y espaciosas.
+              </p>
+            </div>
+            <div>
+              <a href="https://www.sportclub.com.ar/" target="_blank"
+                ><button class="buttonSmall br10 mb15">Más info</button></a
+              >
+            </div>
+          </div>
+          <div class="cardBlock">
+            <div><img src="./img/gym2.jpg" alt="logo" class="imgGym" /></div>
+            <div class="descriptionGyHome">
+              <p class="gymNameHome">Megatlon</p>
+              <p class="infoGymHome">
+                Promovemos la participación de todos los miembros del equipo y
+                nos potenciamos unos a otros. Valoramos los buenos vínculos y la
+                interacción armoniosa y diversa en la comunidad Megatlon.
+                Celebramos nuestros logros en equipo.
+              </p>
+            </div>
+            <div>
+              <a href="https://www.megatlon.com/#/" target="_blank"
+                ><button class="buttonSmall br10 mb15">Más info</button></a
+              >
+            </div>
+          </div>
+          <div class="cardBlock">
+            <div><img src="./img/gym3.jpg" alt="logo" class="imgGym" /></div>
+            <div class="descriptionGyHome">
+              <p class="gymNameHome">SmartFit</p>
+              <p class="infoGymHome">
+                Inaugurada en 2009, Smart Fit fue creada con el propósito de
+                facilitar el acceso a la práctica de actividad física de alta
+                calidad, con planes accesibles y una fácil inscripción.
+              </p>
+            </div>
+            <div>
+              <a href="https://www.smartfit.com.ar/" target="_blank"
+                ><button class="buttonSmall br10 mb15">Más info</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <form class="mainContainer" action="" id="contacto">
+        <p class="subtitleHome">Contacto</p>
+        <div id="contactoContainer">
+          <div>
+            <div class="blockDatos">
+              <div>
+                <input
+                  placeholder="Nombre"
+                  type="text"
+                  class="datos"
+                  required
+                />
+              </div>
+              <div>
+                <input
+                  placeholder="Apellido"
+                  type="text"
+                  class="datos"
+                  required
+                />
+              </div>
+            </div>
+            <div class="blockDatos">
+              <div>
+                <input
+                  placeholder="Correo electrónico"
+                  type="email"
+                  class="datos"
+                  required
+                />
+              </div>
+
+              <div>
+                <input
+                  placeholder="Confirmar correo electrónico"
+                  type="email"
+                  class="datos"
+                  required
+                />
+              </div>
+            </div>
+            <div class="blockDatos">
+              <div>
+                <input placeholder="Cod.Area" class="datos" />
+              </div>
+
+              <div>
+                <input placeholder="Teléfono" class="datos" />
+              </div>
+
+              <div>
+                <input placeholder="Celular" class="datos" required />
+              </div>
+            </div>
+            <div class="blockDatos">
+              <div>
+                <textarea
+                  class="consulta"
+                  placeholder="Ingrese su consulta"
+                  required
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+            <div class="taCenter">
+              <button class="buttonSmall br10">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
-
-    <section class="mainContainer">
-      <p class="subtitleHome">Gimnasios asociados</p>
-      <div class="card">
-        <div class="cardBlock">
-          <div>
-            <img src="./img/gym1.jpg" alt="logo" id="imgGym" />
-          </div>
-          <div class="descriptionGyHome">
-            <p class="gymNameHome">SportClub</p>
-            <p class="infoGymHome">
-              SportClub es la marca líder en servicios deportivos más grande de
-              la Argentina desde hace más de 25 años. Cuenta con +90 centros
-              deportivos adheridos con máquinas de última generación e
-              instalaciones modernas y espaciosas.
-            </p>
-          </div>
-          <div>
-            <a href="./gimnasios.html"
-              ><button class="buttonSmall br10 mb15">Saber más</button></a
-            >
-          </div>
-        </div>
-        <div class="cardBlock">
-          <div><img src="./img/gym2.jpg" alt="logo" id="imgGym" /></div>
-          <div class="descriptionGyHome">
-            <p class="gymNameHome">Megatlon</p>
-            <p class="infoGymHome">
-              Promovemos la participación de todos los miembros del equipo y nos
-              potenciamos unos a otros. Valoramos los buenos vínculos y la
-              interacción armoniosa y diversa en la comunidad Megatlon.
-              Celebramos nuestros logros en equipo.
-            </p>
-          </div>
-          <div>
-            <a href="./gimnasios.html"
-              ><button class="buttonSmall br10 mb15">Saber más</button></a
-            >
-          </div>
-        </div>
-        <div class="cardBlock">
-          <div><img src="./img/gym3.jpg" alt="logo" id="imgGym" /></div>
-          <div class="descriptionGyHome">
-            <p class="gymNameHome">SmartFit</p>
-            <p class="infoGymHome">
-              Inaugurada en 2009, Smart Fit fue creada con el propósito de
-              facilitar el acceso a la práctica de actividad física de alta
-              calidad, con planes accesibles y una fácil inscripción.
-            </p>
-          </div>
-          <div>
-            <a href="./gimnasios.html"
-              ><button class="buttonSmall br10 mb15">Saber más</button></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mainContainer">
-      <p class="subtitleHome">Ejercicios</p>
-      <div class="card">
-        <div class="cardBlock">
-          <div class="ejerHomeBlock">
-            <img src="./img/gym1.jpg" alt="logo" id="imgGym" />
-            <div class="descriptionGyHome">
-              <p class="gymNameHome">SportClub</p>
-              <p class="infoEjer">
-                SportClub es la marca líder en servicios deportivos más grande de
-                la Argentina desde hace más de 25 años. Cuenta con +90 centros
-                deportivos adheridos con máquinas de última generación e
-                instalaciones modernas y espaciosas.
-              </p>
-            </div>
-            <div>
-              <a href="./gimnasios.html"
-                ><button class="buttonSmall br10 mb15">Saber más</button></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="cardBlock">
-          <div class="ejerHomeBlock">
-            <img src="./img/gym1.jpg" alt="logo" id="imgGym" />
-            <div class="descriptionGyHome">
-              <p class="gymNameHome">SportClub</p>
-              <p class="infoEjer">
-                SportClub es la marca líder en servicios deportivos más grande de
-                la Argentina desde hace más de 25 años. Cuenta con +90 centros
-                deportivos adheridos con máquinas de última generación e
-                instalaciones modernas y espaciosas.
-              </p>
-            </div>
-            <div>
-              <a href="./gimnasios.html"
-                ><button class="buttonSmall br10 mb15">Saber más</button></a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="cardBlock">
-          <div class="ejerHomeBlock">
-            <img src="./img/gym1.jpg" alt="logo" id="imgGym" />
-            <div class="descriptionGyHome">
-              <p class="gymNameHome">SportClub</p>
-              <p class="infoEjer">
-                SportClub es la marca líder en servicios deportivos más grande de
-                la Argentina desde hace más de 25 años. Cuenta con +90 centros
-                deportivos adheridos con máquinas de última generación e
-                instalaciones modernas y espaciosas.
-              </p>
-            </div>
-
-          </div>
-        </div>
-        
-      </div>
-    </section>
-
-
-    <section class="mainContainer">
-      <p class="subtitleHome">Nutrición</p>
-      <div id="nutriHomeBanner">
-        <div class="blockNutriHome">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-            quam, repellendus cum iste soluta quae veritatis accusamus
-            perferendis itaque excepturi earum tempora saepe commodi possimus
-            repellat, eum aut minus voluptatibus!
-          </p>
-          <div class="taCenter">
-            <a href="./nutricion.html"
-              ><button class="buttonSmall br10 mt20">Saber más</button></a
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer id="footer">
-      <div class="mb10">
-        <h3 class="titleFooter">Sobre nosotros</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem in
-          nobis laudantium velit, nam expedita iure inventore distinctio.
-          Adipisci consectetur rem ab ipsa ipsum nam debitis et voluptas ad
-          eveniet?
-        </p>
-      </div>
-      <div class="mb10">
+    <div>
+      <footer id="footer">
         <div class="iconSocialContainer">
-          <h3 class="titleFooter">Redes sociales</h3>
+          <a href="#" class="links"
+            ><i class="fab fa-instagram iconSocial"></i>
+          </a>
+          <a href="#" class="links"
+            ><i class="fab fa-facebook iconSocial"></i>
+          </a>
+          <a href="#" class="links"
+            ><i class="fab fa-whatsapp iconSocial"></i>
+          </a>
+          <a href="#" class="links"
+            ><i class="fab fa-twitter iconSocial"></i>
+          </a>
+          <div class="mt20 mb10">
+            <p>Atención telefónica | 0810-0220-6646</p>
+          </div>
           <div>
-            <a href="#" class="links"
-              ><i class="fab fa-instagram iconSocial"></i>
-            </a>
-            <a href="#" class="links"
-              ><i class="fab fa-facebook iconSocial"></i>
-            </a>
-            <a href="#" class="links"
-              ><i class="fab fa-whatsapp iconSocial"></i>
-            </a>
+            <p><small>Gastón Colaneri | &copy 2021</small></p>
           </div>
         </div>
-      </div>
-      <div>
-        <div class="mb10">
-          <h3 class="titleFooter">Suscribite</h3>
-          <div id="inputContainer">
-            <input
-              placeholder="Ingresá tu correo"
-              id="newsletter"
-              type="email"
-            />
-            <i class="fas fa-chevron-circle-right iconSend"> </i>
-          </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
+  <script src="./index.js"></script>
 </html>
