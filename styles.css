@@ -716,7 +716,7 @@ body {
   }
   .tituloEjercicio,
   .boxSaberMas {
-    font-size: 12px;
+    font-size: 10px;
   }
   .textSaberMas {
     padding: 2px;
@@ -753,7 +753,7 @@ body {
     width: 90%;
   }
   .textHome {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -802,7 +802,7 @@ body {
     right: 2%;
   }
   .tituloEjercicio {
-    font-size: 16px;
+    font-size: 14px;
   }
   .textSaberMas {
     padding: 3px;
@@ -829,7 +829,10 @@ body {
     width: 80%;
   }
   .textHome {
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .textRight .textLeft {
+    padding: 5%;
   }
 }
 
@@ -860,7 +863,7 @@ body {
     right: 2.5%;
   }
   .tituloEjercicio {
-    font-size: 15px;
+    font-size: 14px;
   }
   .textSaberMas {
     padding: 4px;
