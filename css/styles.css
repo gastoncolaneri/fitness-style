@@ -72,7 +72,7 @@ body {
 }
 
 .naranja {
-  color: #fa7505;
+  color: var(--orange);
 }
 .w100 {
   width: 100%;
