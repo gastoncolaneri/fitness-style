@@ -23,7 +23,7 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-image: url('./img/background.jpg');
+  background-image: url('../img/background.jpg');
   background-attachment: fixed;
   color: var(--grey);
   height: 100%;
@@ -245,7 +245,7 @@ body {
 /* -------------- Home -------------- */
 
 #bannerBlock {
-  background-image: url('./img/banner.jpg');
+  background-image: url('../img/banner.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -305,15 +305,15 @@ body {
 }
 
 #desayuno {
-  background-image: url('./img/desayuno.jpg');
+  background-image: url('../img/desayuno.jpg');
 }
 
 #almuerzo {
-  background-image: url('./img/almuerzo.jpg');
+  background-image: url('../img/almuerzo.jpg');
 }
 
 #cena {
-  background-image: url('./img/cena.jpg');
+  background-image: url('../img/cena.jpg');
 }
 
 .blockImgNutri {
