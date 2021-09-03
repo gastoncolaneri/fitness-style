@@ -87,7 +87,7 @@ body {
 
 .filterBlack {
   background: rgba(0, 0, 0, 0.3);
-  padding: 50px;
+  padding: 30px;
 }
 #logo {
   width: 80px;
@@ -322,7 +322,6 @@ body {
   backdrop-filter: blur(2px) grayscale(80%) brightness(40%);
   width: 100%;
   height: 100%;
-  text-align: justify;
 }
 .blockNutri:hover {
   backdrop-filter: blur(0px) brightness(50%);
@@ -725,7 +724,8 @@ body {
   .cardBlock:hover .boxSaberMas {
     font-size: 12px;
   }
-  .textRight .textLeft {
+  .textRight,
+  .textLeft {
     padding: 5%;
   }
 
@@ -754,6 +754,9 @@ body {
   }
   .textHome {
     font-size: 12px;
+  }
+  .othersLoginButton {
+    font-size: 14px;
   }
 }
 
@@ -831,8 +834,12 @@ body {
   .textHome {
     font-size: 14px;
   }
-  .textRight .textLeft {
+  .textRight,
+  .textLeft {
     padding: 5%;
+  }
+  .othersLoginButton {
+    font-size: 14px;
   }
 }
 
